@@ -39,7 +39,7 @@ class StockInventoryReferenceTestCase(unittest.TestCase):
 def suite():
     suite = trytond.tests.test_tryton.suite()
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(
-        StockInventoryReference))
+        StockInventoryReferenceTestCase))
     return suite
 
 if __name__ == '__main__':
