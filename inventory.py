@@ -11,7 +11,7 @@ __metaclass__ = PoolMeta
 
 class Inventory:
     __name__ = 'stock.inventory'
-    reference = fields.Char("Reference", size=None, select=True,
+    reference = fields.Char("Reference",
         states={
             'readonly': Not(Equal(Eval('state'), 'draft')),
             }, depends=['state'])
