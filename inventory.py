@@ -6,10 +6,10 @@ from trytond.pool import PoolMeta
 from trytond.pyson import Eval, Not, Equal
 
 __all__ = ['Inventory']
-__metaclass__ = PoolMeta
 
 
 class Inventory:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.inventory'
     reference = fields.Char("Reference",
         states={
