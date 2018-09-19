@@ -8,8 +8,7 @@ from trytond.pyson import Eval, Not, Equal
 __all__ = ['Inventory']
 
 
-class Inventory:
-    __metaclass__ = PoolMeta
+class Inventory(metaclass=PoolMeta):
     __name__ = 'stock.inventory'
     reference = fields.Char("Reference",
         states={
