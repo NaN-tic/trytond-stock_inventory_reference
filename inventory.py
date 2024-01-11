@@ -13,4 +13,4 @@ class Inventory(metaclass=PoolMeta):
     reference = fields.Char("Reference",
         states={
             'readonly': Not(Equal(Eval('state'), 'draft')),
-            }, depends=['state'])
+            })
